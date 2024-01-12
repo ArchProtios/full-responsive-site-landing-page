@@ -1,0 +1,168 @@
+html:-
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <div class="left">
+            <div class="nav">
+                <div id="nav-left">
+                    <i class="ri-arrow-left-line"></i>
+                </div>
+                <div id="nav-right">
+                    <a href="#">About</a>
+                    <a href="#">Work</a>
+                    <a href="#"><i class="ri-twitter-line"></i></a>
+                </div>
+            </div>
+            <div class="content">
+                <h1>Hello,</h1>
+                <h2>Oh. You need a little dummy</h2>
+                <h2>for your mockup? How quaint. </h2>
+                <a href="#">Read</a>
+            </div>
+        </div>
+        <div class="right">
+            <div class="top">
+                <div class="top-left">
+                    <img src="https://photooxy.com/uploads/worigin/2017/08/20/photo7z-text-modus-5974d159e9e4e5974d1de001d2_c0c7630cba9713fee8947331789508c7599876cadfb6c_920af9b08141b537ea769ddab0318489.jpg" alt="">
+                </div>
+                <div class="top-right">
+                    <img src="./th-removebg-preview.png" alt="">
+                </div>
+            </div>
+            <div class="bottom">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.2G4Cruk2xgVo3qq2RLdJzgHaE8&pid=Api&P=0&h=180" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+css:-
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: gilroy;
+    box-sizing: content-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: bisque;
+    display: flex;
+}
+.left{
+    height: 100%;
+    width: 40%;
+    background-color: greenyellow;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 05px;
+    margin: 20px;   
+}
+#nav-left{
+    position: relative;
+    left: -10px;
+}
+#nav-right{
+    position: relative;
+    right: 90px;
+    display: flex;
+}
+#nav-right>a{
+    margin: 5%;
+    text-decoration: none;
+    border-bottom: 2px solid black;
+}
+.content{
+    position: absolute;
+    top: 180px;/*
+    line-height: 0px;*/
+}
+.content>h1{
+    position: relative;
+    left: 160px;
+    font-weight: 900;
+    font-size: 100px;
+    line-height: 150px;
+}
+.content>h2{
+    position: relative;
+    left: 160px;
+    line-height: 30px;
+}
+.content>a{
+    text-decoration: none;
+    position: relative;
+    left: 160px;
+    top: 40px;
+    font-size: 25px;
+    border-bottom: 3px solid black;
+}
+.right{
+    height: 100%;
+    width: 60%;
+}
+.top{
+    height: 50%;
+    width: 100%;
+    display: flex;
+}
+.top-left{
+    width: 50%;
+    height: 100%;
+    justify-content: cover;
+}
+.top-left>img{
+    height: 370px;
+    width: 490px;
+}
+.top-right{
+    width: 50%;
+    height: 100%;
+    background-color: orange;/*
+    box-shadow: 0 0 2px;*/
+}
+.top-right>img{
+    height: 300px;
+    width: 300px;
+    position: relative;
+    right: -20%;
+    top: 9%;   
+}
+.bottom{
+    height: 50%;
+    width: 100%;
+    background-color: aqua;
+}
+.bottom>img{
+    height: 365px;
+    width: 912px;
+}
+@media(max-width:100%){
+    #main{
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+    }
+}
